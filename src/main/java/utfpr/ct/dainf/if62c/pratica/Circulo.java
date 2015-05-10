@@ -5,37 +5,30 @@
  */
 package utfpr.ct.dainf.if62c.pratica;
 
-import static java.lang.Math.PI;
-
 /**
  *
  * @author Victor
  */
-public class Circulo extends Elipse {
+public class Circulo extends Elipse{
 
-    private double raio;
-
-    public Circulo(double r, double s) {
-        super(r, s);
-        raio = r/2;
+    public Circulo(double r){
+        super(r, r);
+      
     }
-
+    
     @Override
-    public double getArea() {
-        double area;
-
-        area = raio * raio * PI;
-
-        return area;
+    public double getArea(){
+        
+        double Area = Math.PI*Math.pow(getEixoMaior(),2);
+        return(Area);
     }
-
+    
+   
     @Override
-    public double getPerimetro() {
-        double perimetro;
-
-        perimetro = 2 * PI * raio;
-
-        return perimetro;
+    public double getPerimetro(){
+       
+       double Perimetro = 2*Math.PI*getEixoMaior();
+        return(Perimetro);
+       
     }
-
 }
