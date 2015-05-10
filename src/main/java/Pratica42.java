@@ -13,8 +13,8 @@ import utfpr.ct.dainf.if62c.pratica.Elipse;
  */
 public class Pratica42 {
 
-    private static final Circulo c = new Circulo(2);
-    private static final Elipse e = new Elipse(2, 3);
+    private static final Circulo c = new Circulo(5);
+    private static final Elipse e = new Elipse(5, 5);
 
     public static void main(String[] args) {
         System.out.println("Area da Elipse: " + e.getArea());
